@@ -1,5 +1,5 @@
 /*Main function: Initialises the map, loads data
- see: http://leafletjs.com/reference-1.2.0.html#map
+ see: https://leafletjs.com/reference-1.2.0.html#map
       https://github.com/socib/Leaflet.TimeDimension
       */
 function show_map() {
