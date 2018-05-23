@@ -52,7 +52,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a href= "http://mapswipe.heigit.org/"><img src="img/mapswipe-logoAnalytics.png" height="70px"></a>
+          <a href= "http://mapswipe.geog.uni-heidelberg.de/"><img src="img/mapswipe-logoAnalytics.png" height="70px"></a>
 
         </div>
 
@@ -78,7 +78,7 @@
 			<h3>Info & Feedback</h3>
 			<p>MapSwipe Analytics is a website that brings together everything related to MapSwipe projects. This includes a visualisation of the results (e.g. settlement layer), but also additional characteristics like agreement among volunteers, which is an important indicator for quality. Furthermore, you can monitor the progress of individual MapSwipe projects. Please note that <b>we are still in the beta mode</b>. We are working on improving the design as well as the analytical features. Your feedback is always welcome. <a href="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/mapswipe/MapSwipeAnalytics" target="blank">Just post an issue to our GitLab repository.</a></p>
 			<p> </p>
-			<p><b>Looking for processed MapSwipe data?</b> Here you go! <a href="http://mapswipe.heigit.org/processing/data/">MapSwipe Data Repository </a></p>
+			<p><b>Looking for processed MapSwipe data?</b> Here you go! <a href="http://mapswipe.geog.uni-heidelberg.de/download/">MapSwipe Data Repository </a></p>
 			<p> </p>
 			<p>We also provide you with the tools (written in python) to process the data on your own. This gives you the possibility to download and process MapSwipe data at any time and as often as you like. As we are trying to improve the scripts step by step, have a look at the <a href="https://gitlab.com/giscience/MapSwipe/MapSwipeTools">GitLab repo</a> and always get the latest version.</p>
 
@@ -116,19 +116,20 @@
       <div id = "descr_box" class = "infoBox" style = "position: absolute; top: 10px; ">
         <p id = "tut_description" style="padding: 5px; font-size: 15px; text-align: center;  margin: auto;">
           <!-- gets filled by js function loadData() -->
-        </p>
-      </div>
-      <div id = "infoBox" class = "infoBox" style = "position: absolute; bottom: 10px;">
-
-
-          <button onclick="timeNav(-1)" class="btn btn-lg control" style="left: 5px; z-index: 997;"><p class = "arrow"><</p></button>
-          <button onclick="timeNav(1)" class="btn btn-lg control" style="right: 5px; z-index: 997;"><p class = "arrow">></p></button>
-
-          <div id = "tut_progress" class = "" style="margin: auto; font-size: 15px; text-align: center; position: relative; top: 25px;">
+          <div id = "tut_description_text"> </div>
+          <div id = "tut_progress" class = "" style="margin: auto; font-size: 15px; text-align: center; position: absolute; bottom: 5px; left: calc(50% - 15px);">
             <!--gets filled by js function loadData() -->
           </div>
-
+        </p>
       </div>
+
+      <button onclick="timeNav(-1)" class="btn btn-lg control" style="left: 10px; z-index: 997;"><p class = "arrow">
+        <
+      </p></button>
+      <button onclick="timeNav(1)" class="btn btn-lg  control" style="right: 10px; z-index: 997;"><p class = "arrow">
+        >
+      </p></button>
+
      </div>
    </body>
   </html>
