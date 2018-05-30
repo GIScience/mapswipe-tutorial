@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*For textboxes, similar to leaflet control elements*/
 .infoBox {
     line-height: 18px;
@@ -39,3 +40,46 @@
   position: relative;
   font-size: 150%;
 }
+=======
+/*For textboxes, similar to leaflet control elements*/
+.infoBox {
+    line-height: 18px;
+    color: #555;
+    /*padding: 6px 8px;*/
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    height: 70px;
+    left: calc(50vw - 138px);
+    width: 260px;
+    /*margin: auto; !important;*/
+    /*min-width: 150px !important;*/
+    z-index: 1000;
+	}
+  /*Design for the collapseable navigation bar*/
+.navbar {
+		margin-bottom: 0px !important;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+.control {
+  color: #555;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 50%;
+  margin-top: -130px;
+  /* margin-top = 0.5 * height */
+  height: 260px;
+  width: 45px;
+}
+
+.arrow {
+  color: black;
+  position: relative;
+  font-size: 150%;
+}
+>>>>>>> 4070502882ebc9a008d64e90cd03aa9427c6c52f
