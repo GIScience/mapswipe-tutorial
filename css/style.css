@@ -9,7 +9,7 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 5px;
     height: 70px;
-    left: calc(50vw - 130px);
+    left: calc(50vw - 138px);
     width: 260px;
     /*margin: auto; !important;*/
     /*min-width: 150px !important;*/
@@ -23,16 +23,19 @@
 	}
 
 .control {
-  background-color: white;
+  color: #555;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   position: absolute;
-  bottom: 20px;
-  height: 30px;
+  top: 50%;
+  margin-top: -130px;
+  /* margin-top = 0.5 * height */
+  height: 260px;
   width: 45px;
 }
 
 .arrow {
   color: black;
   position: relative;
-  top: -15px;
   font-size: 150%;
 }

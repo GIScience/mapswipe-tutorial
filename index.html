@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>GIScience MapSwipe Analytics Tu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="http://www2.geog.uni-heidelberg.de/media/favicon.ico?v=2" rel="shortcut icon">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- include style and script files -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.ajax.js"></script>
+        <script src="js/bing.min.js"></script>
+        <script src="js/L.TileLayer.BetterWMS.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+        <script src = "js/leaflet.timedimension.js"></script>
+        <script src = "js/leaflet.timedimension.layer.js"></script>
+        <script src = "js/leaflet.timedimension.layer.geojson.js"></script>
+        <script src = "js/leaflet.timedimension.util.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/tutorial.js"></script>
+
+    </head>
+    <body onload="show_map()">
+
+		<nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href= "http://mapswipe.geog.uni-heidelberg.de/"><img src="img/mapswipe-logoAnalytics.png" height="70px"></a>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navBar">
+
+    	  <ul class="nav navbar-nav">
+        </ul>
+        <ul class ="nav navbar-nav navbar-right">
+          <li><button id="MapViewBtn" onclick="showMapView()" class="btn btn-primary btn-lg navbar-btn" style="display: none; margin-right: 10px; width: 150px"><i class="fa fa-exchange" aria-hidden="true"></i> Map View</button></li>
+    		  <li><button id="ContactBtn" href="#" onclick="showContactView()" class="btn btn-primary btn-lg navbar-btn" style="margin-right: 10px; width: 150px">Info & Contact</button></li>
+        </ul>
+
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+		<div class="col-md-12" id="contact" style="display: None; padding: 25px; background: white; height: calc(100vH - 92px); overflow: scroll">
+			<h3>Info & Feedback</h3>
+			<p>MapSwipe Analytics is a website that brings together everything related to MapSwipe projects. This includes a visualisation of the results (e.g. settlement layer), but also additional characteristics like agreement among volunteers, which is an important indicator for quality. Furthermore, you can monitor the progress of individual MapSwipe projects. Please note that <b>we are still in the beta mode</b>. We are working on improving the design as well as the analytical features. Your feedback is always welcome. <a href="https://gitlab.gistools.geog.uni-heidelberg.de/giscience/mapswipe/MapSwipeAnalytics" target="blank">Just post an issue to our GitLab repository.</a></p>
+			<p> </p>
+			<p><b>Looking for processed MapSwipe data?</b> Here you go! <a href="http://mapswipe.geog.uni-heidelberg.de/download/">MapSwipe Data Repository </a></p>
+			<p> </p>
+			<p>We also provide you with the tools (written in python) to process the data on your own. This gives you the possibility to download and process MapSwipe data at any time and as often as you like. As we are trying to improve the scripts step by step, have a look at the <a href="https://gitlab.com/giscience/MapSwipe/MapSwipeTools">GitLab repo</a> and always get the latest version.</p>
+
+			<p>You can find more information related to MapSwipe at <a href="http://mapswipe.org/" target="blank">mapswipe.org</a> and the <a href="http://k1z.blog.uni-heidelberg.de/?s=MapSwipe" target="blank">GIScience News Blog</a>.
+			<p> </p>
+      <b>Further information: </b><br>
+        <i style = "font-variant: small-caps; font-style: normal;">De Albuquerque, J.P.; Herfort, B.; Eckle, M. </i> (2016) : <a href="http://www.mdpi.com/2072-4292/8/10/859" target="_blank"> Tasks of the Crowd: A Typology of Tasks in Geographic Information Crowdsourcing and a Case Study in Humanitarian Mapping.</a>
+         <i style="font-style: italic;"> Remote Sensing. </i> 2016, 8(10), 859.
+			<h3>Acknowledgements</h3>
+			<p>This work has kindly been supported by the Klaus Tschira Foundation (KTS) Heidelberg in the context of establishing the Heidelberg Institute for Geoinformation Technology (HeiGIT).</p>
+
+			<p> </p>
+
+			<h3>Contact</h3>
+			<img style="float: left;margin-right: 10px;" src="img/heigit_logo_big.png" height="60px">
+        Heidelberg Institute for Geoinformation Technology <br>
+        Department of Geography, Chair of GIScience<br>
+				Heidelberg University, Germany
+				<p style="clear: both;">
+					<a href="http://www.geog.uni-heidelberg.de/gis/heigit_en.html" target="_blank">http://www.geog.uni-heidelberg.de/gis/heigit_en.html</a>
+					<br><br>
+					Email:
+					<br>
+					herfort[at]uni-heidelberg.de
+				</p>
+				<p>This Website was created by Marcel Reinmuth, Benjamin Herfort and Michael Dollinger. Special Thanks go to Jess Cahill for the work on improving the design. </p>
+		</div>
+
+		<div class="col-md-12" id="leaflet_map" style="height: calc(100vH - 92px); overflow: hidden; z-index: 1200;">
+      <!-- TO DO: Fix position of elements, new buttoms
+      Find a way to keep the textboxes centered AND big enough on small devices
+      -->
+
+
+      <div id = "descr_box" class = "infoBox" style = "position: absolute; top: 10px; ">
+        <p id = "tut_description" style="padding: 5px; font-size: 15px; text-align: center;  margin: auto;">
+          <!-- gets filled by js function loadData() -->
+          <div id = "tut_description_text"> </div>
+          <div id = "tut_progress" class = "" style="margin: auto; font-size: 15px; text-align: center; position: absolute; bottom: 5px; left: calc(50% - 15px);">
+            <!--gets filled by js function loadData() -->
+          </div>
+        </p>
+      </div>
+
+      <button onclick="timeNav(-1)" class="btn btn-lg control" style="left: 10px; z-index: 997;"><p class = "arrow">
+        <
+      </p></button>
+      <button onclick="timeNav(1)" class="btn btn-lg  control" style="right: 10px; z-index: 997;"><p class = "arrow">
+        >
+      </p></button>
+
+     </div>
+   </body>
+  </html>
