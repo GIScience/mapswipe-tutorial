@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*For textboxes, similar to leaflet control elements*/
 .infoBox {
     line-height: 18px;
@@ -14,7 +13,6 @@
     width: 260px;
     /*margin: auto; !important;*/
     /*min-width: 150px !important;*/
-    z-index: 1400;
 	}
   /*Design for the collapseable navigation bar*/
 .navbar {
@@ -40,7 +38,6 @@
   position: relative;
   font-size: 150%;
 }
-=======
 /*For textboxes, similar to leaflet control elements*/
 .infoBox {
     line-height: 18px;
@@ -82,4 +79,3 @@
   position: relative;
   font-size: 150%;
 }
->>>>>>> 4070502882ebc9a008d64e90cd03aa9427c6c52f
